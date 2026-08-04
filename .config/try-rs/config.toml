@@ -1,0 +1,14 @@
+tries_path = "/home/timur/dev/probe"
+editor = "nvim"
+
+[colors]
+title_try = "#fb4934"
+title_rs = "#fabd2f"
+search_box = "#b8bb26"
+list_date = "#928374"
+list_highlight_bg = "#504945"
+list_highlight_fg = "#ebdbb2"
+help_text = "#a89984"
+status_message = "#d79921"
+popup_bg = "#282828"
+popup_text = "#fb4934"
