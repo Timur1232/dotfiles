@@ -31,5 +31,5 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/go/bin/"
 
 # Some paths
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/var/lib/snapd/snap/bin"
