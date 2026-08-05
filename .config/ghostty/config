@@ -2,4 +2,24 @@ font-family = Iosevka Medium
 font-size = 14
 font-feature = +liga
 
-#adjust-cell-width = 6%
+mouse-hide-while-typing = true
+
+# Navigating panes
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+j=goto_split:down
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+l=goto_split:right
+
+# Resizing panes
+keybind = super+ctrl+shift+h=resize_split:left,10
+keybind = super+ctrl+shift+j=resize_split:down,10
+keybind = super+ctrl+shift+k=resize_split:up,10
+keybind = super+ctrl+shift+l=resize_split:right,10
+
+quick-terminal-position = bottom
+quick-terminal-animation-duration = 0.1
+keybind = ctrl+shift+q=toggle_quick_terminal
+keybind = alt+w=quit
+
+gtk-titlebar = true
+# gtk-tabs-location = hidden

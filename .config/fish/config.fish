@@ -10,6 +10,9 @@ end
 # Stupid try-rs won't shut up about configuring fish if I just rename try-rs to try, so I alias it
 alias try "try-rs"
 
+# Main tmux session name for tmain function
+set -gx MAIN_TMUX_SESSION main
+
 # SSH Agent
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
