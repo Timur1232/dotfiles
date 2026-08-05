@@ -14,9 +14,14 @@ COMMAND (required):
     if test -z "$command"; set command ''; end
     set -l help_commands '' 'help' '-h' '--help'
     if test $command = 'run'
-        sudo tmux new-session -d -s 'vpn' "$HOME/Applications/hiddify/AppRun"
+        tmux has-session -t 'vpn' 2> /dev/null
+        if test $status -eq 0
+            echo 'Session already launched!'
+        else
+            tmux new-session -d -s 'vpn' "$HOME/Applications/karing_1.2.23.2606_linux_amd64/AppRun"
+        end
     else if test $command = 'close'
-        sudo tmux kill-session -t 'vpn'
+        tmux kill-session -t 'vpn'
     else if contains -- $command $help_commands # test \( -z $command \) -o \( $command = "help" \) -o \( $command = "-h" \)
         usage
     else

@@ -1,0 +1,9 @@
+[Unit]
+Description=Telegram Proxy
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/tgproxy
+
+[Install]
+WantedBy=default.target
