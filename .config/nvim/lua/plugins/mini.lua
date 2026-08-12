@@ -18,8 +18,8 @@ end
 require('mini.ai').setup {
     -- NOTE: Avoid conflicts with the built-in incremental selection mappings on Neovim>=0.12 (see `:help treesitter-incremental-selection`)
     mappings = {
-        around_next = 'aa',
-        inside_next = 'ii',
+        around_next = 'an',
+        inside_next = 'in',
     },
     n_lines = 500,
 }
@@ -46,3 +46,10 @@ statusline.section_location = function() return '%2l:%-2v' end
 
 -- ... and there is more!
 --  Check out: https://github.com/nvim-mini/mini.nvim
+
+require('mini.align').setup({
+    mappings = {
+        start_with_preview = 'ga',
+        start = '',
+    },
+})
