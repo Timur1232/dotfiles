@@ -10,10 +10,19 @@
       "src": "https://github.com/Vonr/align.nvim",
       "version": "'v2'"
     },
+    "baleia.nvim": {
+      "rev": "710537ff5cd669c5a76c5f5b6a9169fd9b913d18",
+      "src": "https://github.com/m00qek/baleia.nvim"
+    },
     "blink.cmp": {
       "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
+    },
+    "compile-mode.nvim": {
+      "rev": "c53f063b86a31866294053cc42ae44541c10aa77",
+      "src": "https://github.com/ej-shafran/compile-mode.nvim",
+      "version": "'5.15.0'"
     },
     "conform.nvim": {
       "rev": "619363c30309d29ffa631e67c8183f2a72caa373",
