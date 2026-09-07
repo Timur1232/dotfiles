@@ -4,6 +4,8 @@ Description=Telegram Proxy
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/tgproxy
+Restart=on-failure
+RestartSec=3
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
