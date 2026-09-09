@@ -59,8 +59,5 @@ map("n", "gf", "gF")
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 
--- Call ctags for current pwd
-map("n", "<leader>c", ":!ctags -R .<Enter>")
-
 -- Delete word on Alt+Backspace in insert mode
 map("i", "<M-BS>", "<C-w>")

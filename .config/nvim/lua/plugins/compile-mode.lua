@@ -20,4 +20,9 @@ vim.g.compile_mode = {
 }
 
 require("baleia").setup {}
-require("compile-mode").setup {}
+-- require("compile-mode").setup {}
+
+map("n", "<leader>cc", ":Compile<CR>", {desc = "Compile Mode: Run [c]ompilation mode"})
+map("n", "<leader>cr", ":Recompile<CR>", {desc = "Compile Mode: [R]ecompile project"})
+map("n", "<leader>cn", ":NextError<CR>", {desc = "Compile Mode: Go to next error"})
+map("n", "<leader>cp", ":PrevError<CR>", {desc = "Compile Mode: Go to previous error"})
