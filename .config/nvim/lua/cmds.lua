@@ -50,3 +50,12 @@ vim.api.nvim_create_user_command('Comp', function(opts)
     local cmd = vim.fn.shellescape(vim.o.makeprg)
     vim.cmd('! ' .. cmd .. ' 2>&1 | sed "s/\\\\x1b\\\\[[0-9;]*[a-zA-Z]//g"') -- ansi filter
 end, { nargs = '*' })
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function()
+        vim.opt_local.shiftwidth = 4
+        vim.opt_local.tabstop = 4
+        vim.opt_local.softtabstop = 4
+    end,
+})

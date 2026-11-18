@@ -26,5 +26,6 @@ require 'pack'
 require 'cmds'
 require 'treesitter'
 require 'lsp'
+require 'lsp_config'
 
 require 'plugins'

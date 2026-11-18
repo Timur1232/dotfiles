@@ -1,3 +1,6 @@
 CompileFlags:
-  Add: [-Wall, -Wextra, -I/usr/include, -L/usr/lib]
+  Add: [-Wall, -Wextra, -I/usr/include, -L/usr/lib, -I/usr/avr/include, -DSOC_WIFI_SUPPORTED]
   Compiler: clang
+
+SemanticTokens:
+  DisabledKinds: [InactiveCode]

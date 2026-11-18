@@ -2,6 +2,7 @@ local exclude = {
     'autopairs',
     'lint',
     'align',
+    'esp32',
 }
 
 -- Iterate over all Lua files in the plugins directory and load them
