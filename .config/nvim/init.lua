@@ -15,7 +15,7 @@ _G.gh = function(repo) return 'https://github.com/' .. repo end
 ---@param keys Map_Keys[]
 _G.map_keys = function(keys)
     for _, k in pairs(keys) do
-        if !k.mode then k.mode = 'n' end
+        if not k.mode then k.mode = 'n' end
         map(k.mode, k.keys, k.command, { desc = k.desc })
     end
 end

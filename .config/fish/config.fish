@@ -36,3 +36,5 @@ export PATH="$PATH:$HOME/go/bin/"
 # Some paths
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/var/lib/snapd/snap/bin"
+
+export EDITOR="nvim"
